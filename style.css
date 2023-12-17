@@ -1,0 +1,125 @@
+body{
+    font-family: 'josefin sans';
+}
+#logo{
+   margin: 2rem;
+   width: fit-content;
+   height: 25px;
+}
+#photo-mobile{
+    width: 100%;
+}
+#photo-desktop{
+    display: none;
+}
+main{
+    padding: 2rem;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#info{
+    font-weight: 600;
+    font-size: 40px;
+    color: hsl(0, 6%, 24%);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.7rem;
+    margin-bottom: 2rem;
+}
+#info span{
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+#greeting{
+    text-align: center;
+    font-size: 16px;
+    color: hsla(0, 36%, 70%, 0.9);
+    line-height: 1.4rem;
+    margin-bottom: 3rem;
+}
+#email-form{
+    border: 1px solid hsla(0, 36%, 70%, 0.8);
+    border-right: 0;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-height: 51.59px;
+}
+#email-input{
+    margin-left: 2rem;
+    flex-grow: 1;
+}
+#submit-btn{
+    background-image: linear-gradient(180deg, hsl(0, 36%, 70%) ,hsla(0, 93%, 68%, 0.6));
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    box-shadow: hsl(0, 36%, 70%) 0px 7px 29px 0px;
+}
+#submit-btn:hover{
+    background-image: linear-gradient(180deg, hsl(0, 29%, 71%) ,rgb(234, 185, 185));
+    padding: 1rem 2.2rem;
+    box-shadow: hsl(0, 29%, 71%) 0px 7px 29px 0px;
+}
+::placeholder {
+    color: hsla(0, 36%, 70%, 0.5);
+    opacity: 1; /* Firefox */
+}
+#error-msg{
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 20px;
+    align-self: flex-start;
+    display: none;
+}
+#error-icon{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    display: none;
+}
+@media only screen and (width >= 940px){
+    #logo{
+        min-height: 30px;
+    }
+    #info{
+        text-align: left;
+        font-size: 45px;
+    }
+    #greeting{
+        text-align: left;
+        font-size: 21px;
+    }
+    #photo-mobile{
+        display: none;
+    }
+    #photo-desktop{
+        display: inline;
+        height: 100vh;
+    }
+    #mobile-content{
+        display: flex;
+        flex-direction: column;
+        padding: 5rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    main{
+        flex-direction: column;
+        align-items: start;
+        margin-top: 20vh;
+        padding: 0;
+    }
+    #content{
+        display: flex;
+        height: 100vh;
+    }
+    #logo{
+        justify-self: flex-start;
+        margin: 0;
+    }
+}
